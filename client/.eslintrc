@@ -9,12 +9,6 @@
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "no-underscore-dangle": "off",
-    "no-restricted-globals": "off",
-    "no-const-assign": "off",
-    "no-unused-vars": "off"
-  },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+    "no-restricted-globals": "off"
   }
 }
