@@ -1,6 +1,4 @@
-# 19 Progressive Web Applications (PWA): Text Editor
-
-# React Portfolio
+# Progressive Web Applications (PWA): Text Editor
 
 ## Description
 
