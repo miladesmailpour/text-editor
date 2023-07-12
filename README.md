@@ -1,4 +1,5 @@
 # 19 Progressive Web Applications (PWA): Text Editor
+
 # React Portfolio
 
 ## Description
@@ -46,10 +47,11 @@ The following image shows the application's IndexedDB storage:
 ```
 npm install
 npm run start
-or 
+or
 npm start:dev // To run in he dev mode
 
 ```
+
 ## User Story
 
 ```md
@@ -88,10 +90,9 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
-
 ## Helpful Resources
 
-[Use the Production Build](https://legacy.reactjs.org/docs/optimizing-performance.html#use-the-production-build)
+[Heroku Deployment Guide](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide/)
 
 ## How to Contribute
 
@@ -108,11 +109,11 @@ More info: https://g.co/kgs/QWcHhF
 
   # Https URL :
 
-        git clone https://github.com/miladesmailpour/social-network-api.git
+        git clone https://github.com/miladesmailpour/text-editor
 
   # ssh URL :
 
-        git clone git@github.com:miladesmailpour/social-network-api.git
+        git clone git@github.com:miladesmailpour/text-editor.git
 
   # Checking the fetch/pull and push URL :
 
@@ -151,6 +152,3 @@ More info: https://g.co/kgs/QWcHhF
        https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
   # Deploy through the GitHub :
        https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-
-
-
