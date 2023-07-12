@@ -1,15 +1,55 @@
 # 19 Progressive Web Applications (PWA): Text Editor
+# React Portfolio
 
-## Your Task
+## Description
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+- Motivation: Showcase acquired skills and knowledge in a comprehensive text editor project.
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+- Project purpose: Develop a browser-based text editor as a Progressive Web Application (PWA) with offline functionality and data persistenc
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+- Problem solved: Enable users to create, store, and retrieve notes or code snippets reliably, regardless of internet connectivity.
 
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+- Learning outcome: Gain hands-on experience with PWAs, IndexedDB, idb package, Heroku deployment, ES6+ JavaScript, webpack, service workers, and caching.
 
+- Additional benefits: Understand client-server folder structure, npm scripts, webpack plugins, real-time data storage, desktop installation, and optimal asset caching for enhanced performance.
+
+## Table of Contents
+
+- [How To Use](#how-to-use)
+- [Installation](#installation)
+- [Acceptance_Criteria](#acceptance-criteria)
+- [Helpful Resources](#helpful-resources)
+- [How to Contribute](#how-to-contribute)
+
+## How To Use
+
+[Link to the portfolio, deploy on Heroku](https://milad-text-editor-f961710e9d9a.herokuapp.com/)
+
+The following animation demonstrates the application functionality:
+
+![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+
+The following image shows the application's `manifest.json` file:
+
+![Demonstration of the finished Module 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
+
+The following image shows the application's registered service worker:
+
+![Demonstration of the finished Module 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
+
+The following image shows the application's IndexedDB storage:
+
+![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
+
+## Installation
+
+```
+npm install
+npm run start
+or 
+npm start:dev // To run in he dev mode
+
+```
 ## User Story
 
 ```md
@@ -48,95 +88,69 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
-## Mock-Up
 
-The following animation demonstrates the application functionality:
+## Helpful Resources
 
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+[Use the Production Build](https://legacy.reactjs.org/docs/optimizing-performance.html#use-the-production-build)
 
-The following image shows the application's `manifest.json` file:
+## How to Contribute
 
-![Demonstration of the finished Module 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
+Challenges repository
+This is an open-source project Licensed by MIT which allows you to contribute and used open source codes used in this repo (All Branches).
+More info: https://g.co/kgs/QWcHhF
 
-The following image shows the application's registered service worker:
+- Branches are named as modules [n] and each is a unique challenge.
+- Master Branch contains the last solved challenge. (the read me you are reading through, is a default guide when NO challenge is available to help you do a pre-setup.)
 
-![Demonstration of the finished Module 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
+# How to use the module and deploy
 
-The following image shows the application's IndexedDB storage:
+- Clone the repo and make it own
 
-![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
+  # Https URL :
 
-## Grading Requirements
+        git clone https://github.com/miladesmailpour/social-network-api.git
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+  # ssh URL :
 
-This Challenge is graded based on the following criteria:
+        git clone git@github.com:miladesmailpour/social-network-api.git
 
-### Technical Acceptance Criteria: 40%
+  # Checking the fetch/pull and push URL :
 
-* Satisfies all of the above acceptance criteria plus the following:
+        git remote -v
 
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
+  # Modifing origin URL :
 
-  * The application works without an internet connection
+        git remote add origin [https/ssh URL of your repo] https://docs.github.com/en/get-started/quickstart/create-a-repo
 
-  * Automatically saves content inside the text editor when the DOM window is unfocused
+  # Verifing the fetch/pull and push URL :
 
-  * Bundled with webpack
+        git remote -v https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
 
-  * Create a service worker with workbox that Caches static assets
+  # Chacking the status of local :
 
-  * The application should use babel in order to use async / await
+        git status
 
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
+        "if local NOT updated"
+        git add .
+        git commit -m "[your comment]"
+        git push origin master/main
 
-  * Can be installed as a Progressive Web Application
+- Checkout the module (the challenge you want to use and deploy)
+  # Checkout to the desired challenge :
+       git checkout module[n]
+  # Verifing :
+       git status
+  # [Make the change you wish to have]
+       What do you think needs to improve?
+  # Commiting to local and updating the GitHub repo:
+         git add .
+         git commit -m "[your comment]"
+         git push origin [your module name]
+- Moving Modules to Master Branch and deploying:
+  # Creating a pull request to update the master/main :
+       https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+  # Deploy through the GitHub :
+       https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-### Deployment: 32%
 
-* Application deployed to Heroku at live URL with build scripts
 
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
